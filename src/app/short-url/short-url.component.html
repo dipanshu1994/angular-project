@@ -1,0 +1,8 @@
+<h3>Url Shortner</h3>
+<form class="example-form" [formGroup]="urlForm" (ngSubmit) = "submitForm()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter Url" formControlName = "url">
+    </mat-form-field>
+      
+      <button mat-raised-button color="primary" [disabled] = "!urlForm.valid">Submit URL</button>
+  </form>

@@ -1,0 +1,11 @@
+<h3>Login</h3>
+<form class="example-form" [formGroup]="userLoginForm" (ngSubmit)="submitForm()">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Password" formControlName="password" type="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Submit</button>
+</form>
